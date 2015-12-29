@@ -1,6 +1,200 @@
-#facecontainer{
-	background-color:rgba(34, 98, 215,0.5);
-	height: 450px;
-	background-image: url(../image/image1.png);
-	background-size: cover;
+@font-face{
+	font-family: 'roboto';
+    src: url(../fonts/roboto.ttf);
+}
+@font-face{
+	font-family: 'roboto-normal';
+    src: url(../fonts/roboto-normal.ttf);
+}
+html,body{
+	margin: 0;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+#fullscreen-controls{
+	position: fixed;
+	width: 32px;
+	height: 32px;
+	top:80%;
+	right:0;
+	z-index: 101;
+	background-image:url(../icons/fenter.png);
+	background-size: 32px 32px; 
+	margin: 10px;
+
+}
+#fullscreen-controls:hover{
+	cursor: pointer;
+}
+
+#loadscreen{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: black;
+	z-index: 100;
+}
+#center-placeholder{
+	margin: auto;
+	top:20%;
+	position: relative;
+	width: 300px;	
+
+}
+
+#logo-container{
+	position: relative;
+    left: 80px;
+    top: 12px;
+}
+.box{
+	margin:2px;
+	width: 80px;
+    height: 80px;    
+    border-radius: 50%/120%;
+}
+#box-1{
+
+	border-top-right-radius: 0px;
+	background-color: #C7440D;
+	
+}
+#box-2{
+	border-top-left-radius: 0px;	
+    background-color: #89D308;
+    
+}
+#box-3{
+	border-bottom-right-radius: 0px;	
+    background-color: #8098F2;
+    
+}
+#box-4{
+	border-bottom-left-radius: 0px;	
+    background-color: #E8B215;
+    
+}
+#top-row{
+	    display: flex;
+}
+#bottom-row{
+		display: flex;
+}
+#msft-company{
+	position: absolute;
+	margin: auto;
+	font-family: 'roboto-normal';
+	color: white;
+
+}
+#msft-company-windows{
+	position: relative;
+	top:10px;
+	left:20px;
+	margin: auto;
+	font-size: 4em;
+	font-family: 'roboto';
+	color: white;
+	
+	
+}
+#msft-kotapi{
+	text-align: center;
+	position: relative;
+	margin: auto;
+	font-family: 'roboto-normal';
+	color: white;
+	padding-bottom: 80px;
+}
+#loading-bar{
+	width:300px;
+	height: 22px;
+	border:2px solid white;
+	border-radius: 5px;
+	margin: auto;
+	padding-top: 5px;
+	overflow: hidden;
+}
+#load-boxes{
+	position: relative;
+    margin-left: 3px;
+    height: 16px;
+    padding-right: 8px;
+    width: 10px;
+    background:  linear-gradient(to bottom, rgba(74,31,229,1) 1%, rgba(103,70,225,1) 25%, rgba(159,147,217,1) 72%, rgba(159,147,217,1) 100%);
+    display: inline;
+
+    animation-name :roller;
+    animation-duration:4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: step-end;
+    
+}
+
+
+@keyframes roller{
+	0%{
+		left:0%;
+	}
+	5%{
+		left:5%;
+	}
+	10%{
+		left:10%;
+	}
+	15%{
+		left:15%;
+	}
+	20%{
+		left:20%;
+	}
+	25%{
+		left:25%;
+	}
+	30%{
+		left:30%;
+	}
+	35%{
+		left:35%;
+	}
+	40%{
+		left:40%;
+	}
+	45%{
+		left:45%;
+	}
+	50%{
+		left:50%;
+	}
+	55%{
+		left:55%;
+	}
+	60%{
+		left:60%;
+	}
+	65%{
+		left:65%;
+	}
+	70%{
+		left:70%;
+	}
+	75%{
+		left:75%;
+	}
+	80%{
+		left:80%;
+	}
+	85%{
+		left:85%;
+	}
+	90%{
+		left:90%;
+	}
+	95%{
+		left:95%;
+	}
+	100%{
+		left:110%;
+	}
 }

@@ -1,0 +1,59 @@
+.desktop-icon{
+	position: relative;
+	width: 64px;
+	height: 74px;
+	padding-bottom:4px;
+	border-radius: 10px;
+}
+.d-shadow{
+	box-shadow: 8px 10px 21px rgba(0,0,0,0.8);
+}
+.d-icon{
+	position: relative;
+	height: 75%;
+	width: 100%;
+	background-size:64px 64px;
+	border-radius:20px;
+}
+.desktop-icon:hover{
+	background-color: rgba(0,0,127,0.5);
+}
+.d-icon-text{
+	position: relative;
+	font-size: 14px;
+	height: 25%;
+	width: 100%;
+	text-align: center;
+	padding:2px;
+	color: white;
+	background-color: rgba(0,0,0,0.5);
+}
+.title-bar{
+	position: relative;
+	height:30px;
+	width: 100%;
+	background: blue;
+	
+}
+.close-btn{
+	position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 31px;
+    background-color: red;
+    width: 32px;
+
+}
+.title-text{
+	text-align: left;
+	font-size: 16px;
+	padding-left: 10px;
+	padding-top:5px;
+	font-family: 'roboto-normal';
+
+}
+#icon-1{
+	background-image: url(../icons/about.png);
+}
+
+

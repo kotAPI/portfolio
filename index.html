@@ -4,22 +4,186 @@
 	<meta charset="utf-8">
   	<!-- If you delete this meta tag World War Z will become a reality -->
   	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Pranay Kothapalli's Portfolio</title>
-	<link rel="stylesheet" href="style/foundation.min.css">
-	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<title>Pranay Kothapalli</title>
+
+	<link rel="stylesheet" href="style/style.css">
+	<link rel="stylesheet" href="style/loginStyle.css">
+	<link rel="stylesheet" href="style/desktop.css">
+	<link rel="stylesheet" type="text/css" href="style/icon-manager.css">
+	<link rel="stylesheet" type="text/css" href="hot-sneaks/jquery-ui.min.css">
+	<link rel="stylesheet" type="text/css" href="hot-sneaks/theme.css">
+	<link rel="stylesheet" type="text/css" href="style/desktopIcon.css">
+	<link rel="stylesheet" type="text/css" href="style/calc.css">
+
+	<script type="text/javascript" src="src/jquery.js"></script>
+	
 </head>
 <body>
-		<div class="row full-width">
-	  		<div  id="facecontainer" class=" small-12 columns">
 
+		<div id="fullscreen-controls"></div>
 
-	  		</div>
+		<div id="loadscreen">
+			<div id="center-placeholder">
+				<div id="logo-container">
+					<div id="top-row">
+						<div id="box-1" class="box"></div>
+						<div id="box-2" class="box"></div>
+					</div>
+					<div id="bottom-row">
+						<div id="box-3" class="box"></div>
+						<div id="box-4" class="box"></div>
+					</div>				
+				</div>
+				<div id="msft-company">Microsoft</div>
+				<div id="msft-company-windows">Windows</div>
+				<div id="msft-kotapi">KotAPI Version</div>
+				<div id="loading-bar">
+					<div id="load-boxes"></div>
+					<div id="load-boxes"></div>
+					<div id="load-boxes"></div>
+				</div>
+			</div>			
 		</div>
 
+		<div id="login-page">
+			<div id="top-banner"></div>
+			<div id="top-banner-border"></div>
+
+			<div id="left-login-container">
+				<div id="win-logo-png"></div>
+				<div id="win-login-text">To begin, click your user name</div>
+				<div id="login-center-border"></div>
+			</div>
+			<div id="right-login-container">
+
+				<div id="user-login-box">
+					<div id="user-login-img"></div>
+					<div id="user-login-name">Guest						
+						<div id="user-login-pass" style="display:none">
+							<form id="input-login">
+								<input type="password">
+								<input type="submit" id="input-submit" value="GO">
+							</form>
+							
+						</div>
+					</div>										
+				</div>
+			</div>
+
+
+			
+			<div id="bottom-banner">
+				<div id="bottom-banner-border"></div>			
+			</div>
+		</div>
+
+		<div id="desktop">
+
+			<div id="icon-container">
+
+				<div class="desktop-icon" id="calc">
+					<div class="d-icon" id="icon-1"></div>
+					<div class="d-icon-text">Calculator</div>
+				</div>
+
+				
+				<div id="main-container" ><!--Calculator App HTML -->
+					<div id="calculator-container" class="d-shadow">
+					  <div class="title-bar">
+					  	<div class="title-text">Calculator</div>
+					  	<div class="close-btn"></div>
+					  </div> 
+					  <div id="display">0</div>
+					  <div id="1" class="calc-button cbutton">1</div>
+					  <div id="2" class="calc-button cbutton">2</div>
+					  <div id="3" class="calc-button cbutton">3</div>
+					  <div id="multiply" class="calc-button-operator cbutton-operator">X</div>
+					  <br>
+					  <br>
+					  <div id="4" class="calc-button cbutton">4</div>  
+					  <div id="5" class="calc-button cbutton">5</div>
+					  <div id="6" class="calc-button cbutton">6</div>
+					  <div id="divide" class="calc-button-operator cbutton-operator">/</div>
+					  <br>
+					  <br>
+					  <div id="7" class="calc-button cbutton">7</div>
+					  <div id="8" class="calc-button cbutton">8</div>  
+					  <div id="9" class="calc-button cbutton">9</div>
+					  <div id="minus" class="calc-button-operator cbutton-operator">-</div>
+					  <br>
+					  <br>
+					  <div id="point" class ="cbutton">.</div>
+					  <div id="0" class="calc-button cbutton">0</div>    
+					   <div id="equate" class="cbutton-equate">=</div>
+					   <div id="plus" class="calc-button-operator cbutton-operator">+</div>
+					  <br>
+					  <br>
+					   <div id="clear">CLEAR</div>  
+					</div>
+				</div>					
+				
+
+			</div>
 
 
 
-
-
+			<div id="taskbar-container">
+				<div id="start-button">
+					<div id="start-menu">
+						<div class="menu-item">
+							<div class="menu-icon" id="about-me"></div>
+							<div class="menu-text">About Me</div>
+						</div>
+						<div class="menu-item">
+							<div class="menu-icon" id="resume"></div>
+							<div class="menu-text">Resume/CV</div>
+						</div>
+						<div class="menu-item">
+							<div class="menu-icon" id="projects"></div>
+							<div class="menu-text">Projects</div>
+						</div>
+						<div class="menu-item">
+							<div class="menu-icon" id="skills"></div>
+							<div class="menu-text">My Skills</div>
+						</div>
+						<div class="menu-item">
+							<div class="menu-icon" id="music"></div>
+							<div class="menu-text">Music</div>
+						</div>
+						<div class="menu-item">
+							<div class="menu-icon"></div>
+							<div class="menu-text">Social Profiles</div>
+						</div>
+						<div class="menu-item">
+							<div class="menu-icon"></div>
+							<div class="menu-text">Social Profiles</div>
+						</div>
+						<div class="menu-item">
+							<div class="menu-icon"></div>
+							<div class="menu-text">Social Profiles</div>
+						</div>
+						<div class="menu-item">
+							<div class="menu-icon" id="mail-me"></div>
+							<div class="menu-text">E-Mail Me</div>
+						</div>
+						<div class="menu-item">
+							<div class="menu-icon" id="about"></div>
+							<div class="menu-text">About This Portfolio</div>
+						</div>
+					</div>
+					<div id="start-logo"></div>
+					<div id="start-text">Start</div>					
+				</div>
+				<div id="time">TIME</div>
+				<div id="date">DATE</div>
+			</div>
+		</div>
+<script type="text/javascript" src="src/calculator.js"></script>
+<script type="text/javascript" src="src/jquery-ui.min.js"></script>		
+<script type="text/javascript" src="src/fullscreenManager.js"></script>
+<script type="text/javascript" src="src/startMenuManager.js"></script>
+<script type="text/javascript" src="src/timer.js"></script>
+<script type="text/javascript" src="src/wallpaperManager.js"></script>
+<script type="text/javascript" src="src/test.js"></script>
 </body>
 </html>

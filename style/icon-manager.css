@@ -1,0 +1,63 @@
+#about-me{
+	background: url(../icons/iron-man.png) center center no-repeat;
+	background-size: 12px 16px;
+	margin: auto;
+	transition:all 0.1s linear;
+}
+#about-me:hover{
+	background-size: 24px 32px;
+}
+#resume{
+	background: url(../icons/resume.png) center center no-repeat;
+	background-size: 12px 16px;
+	margin: auto;
+	transition:all 0.1s linear;
+}
+#resume:hover{
+	background-size: 24px 32px;
+}
+#projects{
+	background: url(../icons/projects.png) center center no-repeat;
+	background-size: 12px 16px;
+	margin: auto;
+	transition:all 0.1s linear;
+}
+#projects:hover{
+	background-size: 24px 32px;
+}
+#skills{
+	background: url(../icons/skills.png) center center no-repeat;
+	background-size: 12px 16px;
+	margin: auto;
+	transition:all 0.1s linear;
+}
+#skills:hover{
+	background-size: 24px 32px;
+}
+#about{
+	background: url(../icons/about.png) center center no-repeat;
+	background-size: 12px 16px;
+	margin: auto;
+	transition:all 0.1s linear;
+}
+#about:hover{
+	background-size: 24px 32px;
+}
+#music{
+	background: url(../icons/music.png) center center no-repeat;
+	background-size: 12px 16px;
+	margin: auto;
+	transition:all 0.1s linear;
+}
+#music:hover{
+	background-size: 24px 32px;
+}
+#mail-me{
+	background: url(../icons/email.png) center center no-repeat;
+	background-size: 12px 16px;
+	margin: auto;
+	transition:all 0.1s linear;
+}
+#mail-me:hover{
+	background-size: 24px 32px;
+}
