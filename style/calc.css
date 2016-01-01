@@ -3,15 +3,14 @@
 #clear{
   background:rgba(125,125,125,0.1);
   color:white;
-  width:270px;
+  width:100%;
   text-align:center;
-  padding:10px;
   font-size:30px;
 }
 #display{
-  font-size:32px;
+  font-size:40px;
   margin:10px;
-  width:270px;
+  width:250px;
   text-align:right;
   overflow: hidden;
 }
@@ -23,8 +22,7 @@
 
 #calculator-container{
   position: relative;
- margin:auto;
- width:295px;
+ width:270px;
  background:black;
   user-select:none;
   font-family: 'Indie Flower', cursive;

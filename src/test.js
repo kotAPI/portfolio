@@ -5,7 +5,11 @@ $( document ).ready(function() {
   updateWallpaper();
 
   $("#main-container").hide();
-
+  $("#d-app-2").hide();
+  $("#d-app-3").hide();
+  $("#d-app-4").hide();
+  $("#d-app-5").hide();
+  $("#d-app-6").hide();
   ///// FOR DEBUGGIN ONLY
   ///
   fadeLoadScreen(1);
@@ -15,18 +19,63 @@ $( document ).ready(function() {
   /// END OF DEBUG ||||| GET RID OF THESE IN PRODUCTION
   $(".desktop-icon").draggable(); // set up desktop Icon
   $("#main-container").draggable();// set up desktop app(calculator)
+  // About Me
+  $("#d-app-2").draggable().resizable();
+  $("#d-app-3").draggable().resizable();
+  $("#d-app-4").draggable().resizable();
+  $("#d-app-5").draggable().resizable();
+  $("#d-app-6").draggable().resizable();
 
 
 
-
+  //CALC
   $("#calc").dblclick(function(){ //Open Calc on dblclick
   	$("#main-container").show();
   });
-  $("#main-container .close-btn").click(function(){ //Close calc on close button
+  $("#main-container #d-close-calc").click(function(){ //Close calc on close button
   	$("#main-container").hide();
   });
-  	
+
+  // ABOUT ME
+  $("#i-abtme").click(function(){ //Close calc on close button
+    $("#d-app-2").show();
+  });
+  $("#d-close-abtme").click(function(){ //Close calc on close button
+    $("#d-app-2").hide();
+  });
+  // RESUME CV
+  $("#i-resume").click(function(){ //Close calc on close button
+    $("#d-app-3").show();
+  });
+  $("#d-close-resume").click(function(){ //Close calc on close button
+    $("#d-app-3").hide();
+  });
+  // Projects
+  $("#i-projects").click(function(){ //Close calc on close button
+    $("#d-app-4").show();
+  });
+  $("#d-close-projects").click(function(){ //Close calc on close button
+    $("#d-app-4").hide();
+  });
+  // SKILLS
+  $("#i-skills").click(function(){ //Close calc on close button
+    $("#d-app-5").show();
+  });
+  $("#d-close-skills").click(function(){ //Close calc on close button
+    $("#d-app-5").hide();
+  });
+  // MUSIC
+  // TO -DO
+  //
+  //
+  //
+  //
+  // END OF MUSIC
   
+  
+
+
+
 
 
   var toggler = 0;

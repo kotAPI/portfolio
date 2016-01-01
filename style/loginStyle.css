@@ -26,11 +26,11 @@ input:focus{
     font-family: 'roboto';
 }
 body{
-	  -webkit-user-select: none;  /* Chrome all / Safari all */
-	  -moz-user-select: none;     /* Firefox all */
-	  -ms-user-select: none;      /* IE 10+ */
-	  user-select: none;
-	  cursor: default;
+	  -webkit-user-select: none !important;  /* Chrome all / Safari all */
+	  -moz-user-select: none !important;     /* Firefox all */
+	  -ms-user-select: none !important;      /* IE 10+ */
+	  user-select: none !important;
+	  cursor: default !important;
 }
 #login-page{
 	position: absolute;

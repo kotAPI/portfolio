@@ -24,31 +24,35 @@
 	height: 25%;
 	width: 100%;
 	text-align: center;
-	padding:2px;
 	color: white;
 	background-color: rgba(0,0,0,0.5);
 }
 .title-bar{
 	position: relative;
-	height:30px;
-	width: 100%;
-	background: blue;
+    height: 60px;
+    width: 100%;
+    background: rgba(0,52,255,0.5);
 	
 }
 .close-btn{
 	position: absolute;
     top: 0px;
-    right: 0px;
-    height: 31px;
+    right: -2px;
+    height: 60px;
     background-color: red;
-    width: 32px;
-
+    width: 59px;
+    background-image: url(../icons/close.png);
+    background-size: 59px 60px;
+    border-radius: 5px;
+}
+.close-btn:hover{
+	cursor: pointer;
 }
 .title-text{
 	text-align: left;
-	font-size: 16px;
+	font-size: 28px;
 	padding-left: 10px;
-	padding-top:5px;
+	padding-top:8px;
 	font-family: 'roboto-normal';
 
 }
@@ -56,4 +60,52 @@
 	background-image: url(../icons/about.png);
 }
 
+/* TURN ALL THESE APP IDs TO CLASSES.  (app-2 to all the way) UNNECESSARY OVERHEAD, CAN BE OPTIMIZED */
+#d-app-2{
+	position: absolute;
+	width: 600px;
+	height: 520px;
+	min-width: 300px;
+	z-index: 81;
+	overflow: hidden;
+	border-radius:8px;
+	
+}
+#d-app-3{
+	position: absolute;
+	width: 600px;
+	height: 450px;
+	min-width: 300px;
+	background-color: rgba(255,255,255,0.5);
+	z-index: 82;
+}
+#d-app-4{
+	position: absolute;
+	width: 600px;
+	height: 450px;
+	min-width: 300px;
+	background-color: rgba(255,255,255,0.5);
+	z-index: 83;
+}
+#d-app-5{
+	position: absolute;
+	width: 600px;
+	height: 450px;
+	background-color: rgba(255,255,255,0.5);
+	z-index: 84;
+}
+#d-app-6{
+	position: absolute;
+	width: 600px;
+	height: 450px;
+	background-color: rgba(255,255,255,0.5);
+	z-index: 85;
+}
 
+#txt-abtme{
+	position: relative;
+	height: inherit;
+	width: 100%;
+	background: rgba(255,255,255,0.85);
+	overflow: scroll;
+}

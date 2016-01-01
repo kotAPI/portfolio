@@ -5,13 +5,14 @@
   	<!-- If you delete this meta tag World War Z will become a reality -->
   	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Pranay Kothapalli</title>
-
+	
+	<link rel="stylesheet" type="text/css" href="style/foundation.min.css">
+	
 	<link rel="stylesheet" href="style/style.css">
 	<link rel="stylesheet" href="style/loginStyle.css">
 	<link rel="stylesheet" href="style/desktop.css">
 	<link rel="stylesheet" type="text/css" href="style/icon-manager.css">
-	<link rel="stylesheet" type="text/css" href="hot-sneaks/jquery-ui.min.css">
-	<link rel="stylesheet" type="text/css" href="hot-sneaks/theme.css">
+	<link rel="stylesheet" type="text/css" href="hot-sneaks/jquery-ui.min.css">	
 	<link rel="stylesheet" type="text/css" href="style/desktopIcon.css">
 	<link rel="stylesheet" type="text/css" href="style/calc.css">
 
@@ -81,95 +82,139 @@
 		<div id="desktop">
 
 			<div id="icon-container">
-
 				<div class="desktop-icon" id="calc">
 					<div class="d-icon" id="icon-1"></div>
 					<div class="d-icon-text">Calculator</div>
 				</div>
-
-				
-				<div id="main-container" ><!--Calculator App HTML -->
+				<!-- All the apps go here -->
+				<div id="main-container"  ><!--Calculator App HTML -->
 					<div id="calculator-container" class="d-shadow">
 					  <div class="title-bar">
 					  	<div class="title-text">Calculator</div>
-					  	<div class="close-btn"></div>
+					  	<div class="close-btn" id="d-close-calc"></div>
 					  </div> 
 					  <div id="display">0</div>
 					  <div id="1" class="calc-button cbutton">1</div>
 					  <div id="2" class="calc-button cbutton">2</div>
 					  <div id="3" class="calc-button cbutton">3</div>
-					  <div id="multiply" class="calc-button-operator cbutton-operator">X</div>
-					  <br>
-					  <br>
+					  <div id="multiply" class="calc-button-operator cbutton-operator">X</div>					
 					  <div id="4" class="calc-button cbutton">4</div>  
 					  <div id="5" class="calc-button cbutton">5</div>
 					  <div id="6" class="calc-button cbutton">6</div>
 					  <div id="divide" class="calc-button-operator cbutton-operator">/</div>
-					  <br>
-					  <br>
 					  <div id="7" class="calc-button cbutton">7</div>
 					  <div id="8" class="calc-button cbutton">8</div>  
 					  <div id="9" class="calc-button cbutton">9</div>
 					  <div id="minus" class="calc-button-operator cbutton-operator">-</div>
-					  <br>
-					  <br>
 					  <div id="point" class ="cbutton">.</div>
 					  <div id="0" class="calc-button cbutton">0</div>    
 					   <div id="equate" class="cbutton-equate">=</div>
 					   <div id="plus" class="calc-button-operator cbutton-operator">+</div>
-					  <br>
-					  <br>
 					   <div id="clear">CLEAR</div>  
 					</div>
 				</div>					
-				
+				<!--CALCULATOR APP HTML END-->
+				<!-- App2-->
+				<div id="d-app-2" class="d-shadow">
+					<div class="title-bar">
+					  	<div class="title-text">About Me</div>
+					  	<div class="close-btn" id="d-close-abtme"></div>					  	
+					 </div>
+					 <div id="txt-abtme">
+					  		<div class="row">
+					  			<div class="column small-8">						  			
+						  			<h3>About Me</h3>						  							  				
+
+					  				<p> Hello there, thanks for passing by. I am <b>Pranay</b>, I love coffee. I'm a big time gamer and I love playing video games, my all time favorite games are <b><em>DotA, Elder Scrolls V: Skyrim. </b></em> These games are probably what got me interested in game development and computer graphics, I can't tell. I'm a Marvel Comics fan and I adore <em>Iron-Man and J.A.R.V.I.S</em>. Also probably explains why I love tech so much. I love to code my way to sleep most of my days. I'm a self taught coder with a bachelors in Information Tech. You'd find me digging deep into concepts of Artificial Intelligence and Computer Vision if you'd have a look at my browsing history(Really). I also have a passion for art and design. 				 </p>				  				
+					  			</div>
+					  			<div class="column small-4">
+					  				<img src="image/me.jpg">
+					  			</div>					  			
+					  		</div>
+					  		<div class"row">
+					  			<div class="column small-12">
+					  				<p>
+					  					Having been a full time C++ coder and built games in the past. I got into coding with Javascript by mistake and fell in love eversince. I discovered how vast the JS community is and turned JS into my primary language. I still learn a thing or two about this amazing language everyday and it never ends. I love designing and developing front-end applications/apps via CSS and JS. To me, computing is a way of life and I don't mind any kind of work as long as it is in code.
+					  				</p>
+					  			</div>
+					  			<div class="row">
+					  				<div class="column small-12">
+					  					- - - -
+					  				</div>
+					  			</div>
+					  		</div>
+					  	</div> 
+				</div>
+				<div id="d-app-3" class="d-shadow">
+					<div class="title-bar">
+					  	<div class="title-text">Resume/CV</div>
+					  	<div class="close-btn" id="d-close-resume"></div>
+					  </div> 
+				</div>
+				<div id="d-app-4"  class="d-shadow">
+					<div class="title-bar">
+					  	<div class="title-text">Projects</div>
+					  	<div class="close-btn" id="d-close-projects"></div>
+					  </div> 
+				</div>
+				<div id="d-app-5" class="d-shadow">
+					<div class="title-bar">
+					  	<div class="title-text">Skills</div>
+					  	<div class="close-btn" id="d-close-skills"></div>
+					  </div> 
+				</div>
+				<div id="d-app-6" class="d-shadow">
+					<div class="title-bar">
+					  	<div class="title-text">Music</div>
+					  	<div class="close-btn" id="d-close-music"></div>
+					  </div> 
+				</div>
+
 
 			</div>
-
-
 
 			<div id="taskbar-container">
 				<div id="start-button">
 					<div id="start-menu">
-						<div class="menu-item">
-							<div class="menu-icon" id="about-me"></div>
-							<div class="menu-text">About Me</div>
+						<div class="d-menu-item" id="i-abtme">
+							<div class="d-menu-icon" id="about-me"></div>
+							<div class="d-menu-text">About Me</div>
 						</div>
-						<div class="menu-item">
-							<div class="menu-icon" id="resume"></div>
-							<div class="menu-text">Resume/CV</div>
+						<div class="d-menu-item" id="i-resume">
+							<div class="d-menu-icon" id="resume"></div>
+							<div class="d-menu-text">Resume/CV</div>
 						</div>
-						<div class="menu-item">
-							<div class="menu-icon" id="projects"></div>
-							<div class="menu-text">Projects</div>
+						<div class="d-menu-item" id="i-projects">
+							<div class="d-menu-icon" id="projects"></div>
+							<div class="d-menu-text">Projects</div>
 						</div>
-						<div class="menu-item">
-							<div class="menu-icon" id="skills"></div>
-							<div class="menu-text">My Skills</div>
+						<div class="d-menu-item" id="i-skills">
+							<div class="d-menu-icon" id="skills"></div>
+							<div class="d-menu-text">My Skills</div>
 						</div>
-						<div class="menu-item">
-							<div class="menu-icon" id="music"></div>
-							<div class="menu-text">Music</div>
+						<div class="d-menu-item" id="i-music">
+							<div class="d-menu-icon" id="music"></div>
+							<div class="d-menu-text">Music</div>
 						</div>
-						<div class="menu-item">
-							<div class="menu-icon"></div>
-							<div class="menu-text">Social Profiles</div>
+						<div class="d-menu-item">
+							<div class="d-menu-icon"></div>
+							<div class="d-menu-text">Social Profiles</div>
 						</div>
-						<div class="menu-item">
-							<div class="menu-icon"></div>
-							<div class="menu-text">Social Profiles</div>
+						<div class="d-menu-item">
+							<div class="d-menu-icon"></div>
+							<div class="d-menu-text">Social Profiles</div>
 						</div>
-						<div class="menu-item">
-							<div class="menu-icon"></div>
-							<div class="menu-text">Social Profiles</div>
+						<div class="d-menu-item">
+							<div class="d-menu-icon"></div>
+							<div class="d-menu-text">Social Profiles</div>
 						</div>
-						<div class="menu-item">
-							<div class="menu-icon" id="mail-me"></div>
-							<div class="menu-text">E-Mail Me</div>
+						<div class="d-menu-item">
+							<div class="d-menu-icon" id="mail-me"></div>
+							<div class="d-menu-text">E-Mail Me</div>
 						</div>
-						<div class="menu-item">
-							<div class="menu-icon" id="about"></div>
-							<div class="menu-text">About This Portfolio</div>
+						<div class="d-menu-item">
+							<div class="d-menu-icon" id="about"></div>
+							<div class="d-menu-text">About This Portfolio</div>
 						</div>
 					</div>
 					<div id="start-logo"></div>
@@ -180,8 +225,11 @@
 			</div>
 		</div>
 		<!-- END MAIN CONTENT PAGE HTML stuff-->
+<script type="text/javascript" src="src/jquery-ui.min.js"></script>	
+<!-- Jquery Always First -->
+<script type="text/javascript" src="src/foundation.min.js"></script>
 <script type="text/javascript" src="src/calculator.js"></script>
-<script type="text/javascript" src="src/jquery-ui.min.js"></script>		
+	
 <script type="text/javascript" src="src/fullscreenManager.js"></script>
 <script type="text/javascript" src="src/startMenuManager.js"></script>
 <script type="text/javascript" src="src/timer.js"></script>
