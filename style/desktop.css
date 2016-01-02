@@ -7,17 +7,14 @@
 	transition:all 4s ease;
 	z-index: 10;
 	overflow: hidden;
-
 }
-
-
 #taskbar-container{
 	width: 100%;
 	height: 40px;
 	position:absolute;
     bottom:-2px;
     right:0;
-	background:rgba(0,0,0,0.8);
+	background:#E7DBC7;
 	box-shadow: 0px -2px 18px black;
 }
 #icon-container{
@@ -25,15 +22,14 @@
 	width: 100%;
 	height: 94%;
 }
-
 .d-menu-item{
 	height: 37px;
 	margin-top:2px; 
 	width: 242px;
-	border-radius: 10px;
+	
 }
 .d-menu-item:hover{
-	background-color: #2196F3;
+	background-color:#E7DDC8;
 }
 .d-menu-icon{
 	height: 100%;
@@ -51,9 +47,6 @@
 	font-size: 16px;
 	vertical-align: text-top;
 }
-
-
-
 #start-menu {
     position: absolute;
     padding: 3px;
@@ -61,20 +54,17 @@
     left: 1px;
     height: 400px;
     width: 250px;
-    border:2px solid rgba(0,0,0,0.6);
-    background-color: rgba(255,255,255,0.95);
-    border-top-right-radius: 10px;
+    background-color: white;
 }
 #start-button{
 	height: 100%;
 	width: 120px;
 	bottom:100px;
-	background: #8CBA1F;
+	background: #E1BA91;
 	border-top-right-radius: 40px;
-	border:2px solid black;
 }
 #start-button:hover{
-	background: #C8EF6B;
+	background: #8A7259;
 }
 #start-button:hover{
 	cursor: pointer;
@@ -99,27 +89,26 @@
 }
 #time{
 	position: absolute;
-	text-align: center;
-	height: 50%;
-	width: 70px;
-	bottom:-10px;
-	right:0px;
-	padding: 20px;
-	color:white;
-	font-size: 10px;
+    text-align: center;
+    font-weight: 700;
+    height: 50%;
+    width: 80px;
+    bottom: 15px;
+    right: 4px;
+    font-size: 12px;
+    color: #747062;
 }
 #date{
 	position: absolute;
-	text-align: center;
-	height: 50%;
-	width: 70px;
-	bottom: -24px;
-	right:0px;
-	padding: 20px;
-	color:white;
-	font-size: 10px;
+    text-align: center;
+    height: 50%;
+    width: 70px;
+    bottom: 0px;
+    right: 6px;
+    font-weight: 700;
+    color: #444340;
+    font-size: 11px;
 }
-
 .d-scrollable{
 	overflow: scroll;
 }

@@ -27,7 +27,6 @@ html,body{
 #fullscreen-controls:hover{
 	cursor: pointer;
 }
-
 #loadscreen{
 	position: absolute;
 	width: 100%;
@@ -40,9 +39,7 @@ html,body{
 	top:20%;
 	position: relative;
 	width: 300px;	
-
 }
-
 #logo-container{
 	position: relative;
     left: 80px;
@@ -55,25 +52,20 @@ html,body{
     border-radius: 50%/120%;
 }
 #box-1{
-
 	border-top-right-radius: 0px;
-	background-color: #C7440D;
-	
+	background-color: #C7440D;	
 }
 #box-2{
 	border-top-left-radius: 0px;	
-    background-color: #89D308;
-    
+    background-color: #89D308;    
 }
 #box-3{
 	border-bottom-right-radius: 0px;	
-    background-color: #8098F2;
-    
+    background-color: #8098F2;    
 }
 #box-4{
 	border-bottom-left-radius: 0px;	
-    background-color: #E8B215;
-    
+    background-color: #E8B215;    
 }
 #top-row{
 	    display: flex;
@@ -86,7 +78,6 @@ html,body{
 	margin: auto;
 	font-family: 'roboto-normal';
 	color: white;
-
 }
 #msft-company-windows{
 	position: relative;
@@ -95,9 +86,7 @@ html,body{
 	margin: auto;
 	font-size: 4em;
 	font-family: 'roboto';
-	color: white;
-	
-	
+	color: white;	
 }
 #msft-kotapi{
 	text-align: center;
@@ -128,8 +117,7 @@ html,body{
     animation-name :roller;
     animation-duration:4s;
     animation-iteration-count: infinite;
-    animation-timing-function: step-end;
-    
+    animation-timing-function: step-end;    
 }
 
 

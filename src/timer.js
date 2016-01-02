@@ -9,7 +9,7 @@ function updateTime() {
         if (seconds < 10){
             seconds = "0" + seconds;
         }
-        var v = hours + ": " + minutes + ": " + seconds + " ";
+        var v = hours + ":" + minutes + ":" + seconds + " ";
         if(hours > 11){
             v+="PM";
         } else {

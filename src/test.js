@@ -1,6 +1,6 @@
 $( document ).ready(function() {
   // Handler for .ready() called.
-  //fadeLoadScreen(3000); // Hide Load-Screen// Use in production
+  fadeLoadScreen(3000); // Hide Load-Screen// Use in production
   updateTime();
   updateWallpaper();
 
@@ -12,8 +12,8 @@ $( document ).ready(function() {
   $("#d-app-6").hide();
   ///// FOR DEBUGGIN ONLY
   ///
-  fadeLoadScreen(1);
-  fadeLoginScreen();
+  //fadeLoadScreen(1);
+  //fadeLoginScreen();
   
   ///
   /// END OF DEBUG ||||| GET RID OF THESE IN PRODUCTION
