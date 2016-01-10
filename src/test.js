@@ -9,7 +9,7 @@ $( document ).ready(function() {
   $("#d-app-3").hide();
   $("#d-app-4").hide();
   $("#d-app-5").hide();
-  $("#d-app-6").hide();
+  //$("#d-app-6").hide();
   ///// FOR DEBUGGIN ONLY
   ///
   //fadeLoadScreen(1);
@@ -24,8 +24,7 @@ $( document ).ready(function() {
   $("#d-app-3").draggable().resizable();
   $("#d-app-4").draggable().resizable();
   $("#d-app-5").draggable().resizable();
-  $("#d-app-6").draggable().resizable();
-
+  $(".music-container").draggable();
 
 
   //CALC
@@ -72,12 +71,7 @@ $( document ).ready(function() {
   //
   // END OF MUSIC
   
-  
-
-
-
-
-
+/// FULL SCREEN TOGGLERS ** REFACTOR
   var toggler = 0;
   var fullscreenToggler =0;
   // Toggle login-user on and off.
@@ -101,11 +95,24 @@ $( document ).ready(function() {
   ///
   /// Login to desktop on submit
   /// 
-  
-  $("#input-login").submit(function(event){
+  ///  
+  ///   
+
+// Important handlers to change screens on submitting password
+  $("#login-password").submit(function(event){
   	fadeLoginScreen();
   });
- 
+  
+$('#login-password').keypress(function (e) {
+  if (e.which == 13) {
+    $('#login-password').submit();
+    return false;    //<---- Add this line
+  }
+});
+// ** REFACTOR
+
+
+// Handler for full screen toggling
   $("#fullscreen-controls").click(function(){
   	if(fullscreenToggler === 0){  		
   	 launchIntoFullscreen(document.documentElement);
@@ -120,23 +127,9 @@ $( document ).ready(function() {
 });
 
 
+// Find out why the fuck you have two functions here.
 var fadeLoadScreen = function (time) {
 	$("#loadscreen").delay( time ).fadeOut("slow");
-}
-
-var toggleLoginTabOn = function(){		
-  		$("#user-login-box").css("height","200px").css("background","rgba(0,0,0,0.25)");
-  		$("#user-login-img").css("top","25%");
-  		$("#user-login-name").css("top","25%");
-  		$("#user-login-pass").show();  
-}
-
-var toggleLoginTabOff = function(){	
-  		$("#user-login-box").css("height","60px").css("background","rgba(255,255,255,0.3)");
-  		$("#user-login-img").css("top","0%");
-  		$("#user-login-name").css("top","0%");
-  		$("#user-login-pass").hide();
-  
 }
 
 var fadeLoginScreen = function(){
