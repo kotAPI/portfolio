@@ -12,7 +12,7 @@ $(document).ready(function(){
 
   $("#weather-container").click(function(){    
     $("#weather-container").css("z-index","0");
-     $.getJSON( "http://api.openweathermap.org/data/2.5/weather?lat="+latitude+"&lon="+longitude+"&appid=36292b490b9d31685bd36b7de9afe625", function( data ) {
+     $.getJSON( "https://api.openweathermap.org/data/2.5/weather?lat="+latitude+"&lon="+longitude+"&appid=36292b490b9d31685bd36b7de9afe625", function( data ) {
         
     temperature = data.main.temp;
     description = data.weather[0].description;
