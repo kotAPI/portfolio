@@ -15,6 +15,7 @@
 	<link rel="stylesheet" type="text/css" href="hot-sneaks/jquery-ui.min.css">	
 	<link rel="stylesheet" type="text/css" href="style/desktopIcon.css">
 	<link rel="stylesheet" type="text/css" href="style/calc.css">
+	<link rel="stylesheet" type="text/css" href="style/musicplayer.css">
 
 	<script type="text/javascript" src="src/jquery.js"></script>
 	
@@ -47,39 +48,26 @@
 		<!-- END Loadscreen HTML stuff-->
 		<!-- BEGIN WINDOWS LOGIN PAGE HTML stuff-->
 		<div id="login-page">
-			<div id="top-banner"></div>
-			<div id="top-banner-border"></div>
-
-			<div id="left-login-container">
-				<div id="win-logo-png"></div>
-				<div id="win-login-text">To begin, click your user name</div>
-				<div id="login-center-border"></div>
-			</div>
-			<div id="right-login-container">
-
-				<div id="user-login-box">
-					<div id="user-login-img"></div>
-					<div id="user-login-name">Guest						
-						<div id="user-login-pass" style="display:none">
-							<form id="input-login">
-								<input type="password">
-								<input type="submit" id="input-submit" value="GO">
-							</form>
-							
-						</div>
-					</div>										
+			<div id="login-wrapper">
+				<div id="login-container">
+					<div id="login-image"></div>
+					<div id="login-details">
+						<div id="login-name">Pranay Kothapalli</div>
+						<input type="password" id="login-password" placeholder="Enter Fake Pass">
+					</div>
+					
 				</div>
-			</div>
-
-
-			
-			<div id="bottom-banner">
-				<div id="bottom-banner-border"></div>			
-			</div>
+			</div>			
 		</div>
 		<!-- END WINDOWS LOGIN PAGE HTML stuff-->
 		<!-- BEGIN MAIN CONTENT PAGE HTML stuff-->
 		<div id="desktop">
+
+			<div id="weather-container" >
+				<span id="city">Click here for weather</span>
+				<span id="weather-icon"></span>
+				<span id="weather-temperature"></span>
+			</div>
 
 			<div id="icon-container">
 				<div class="desktop-icon" id="calc">
@@ -162,13 +150,9 @@
 					  	<div class="title-text">Skills</div>
 					  	<div class="close-btn" id="d-close-skills">x</div>
 					  </div> 
-				</div>
-				<div id="d-app-6" class="d-shadow">
-					<div class="title-bar">
-					  	<div class="title-text">Music</div>
-					  	<div class="close-btn" id="d-close-music">x</div>
-					  </div> 
-				</div>
+				</div>				
+				
+				
 
 
 			</div>
@@ -209,7 +193,7 @@
 							<div class="d-menu-text">Social Profiles</div>
 						</div>
 						<div class="d-menu-item">
-						<a href="mailto:pranaykothapalli@gmail.com?subject=Reply-Portfolio"> 
+						<a href="mailto:pranaykothapalli@gmail.com?subject=Mail-Portfolio"> 
 							<div class="d-menu-icon" id="mail-me"></div>
 							<div class="d-menu-text">E-Mail Me</div>
 						</a>
@@ -219,23 +203,30 @@
 							<div class="d-menu-text">About This Portfolio</div>
 						</div>
 					</div>
-					<div id="start-logo"></div>
+					<div id="start-logo">
+						<div class="start-box" id="start-box-1"></div>
+						<div class="start-box" id="start-box-2"></div>
+						<div class="start-box" id="start-box-3"></div>
+						<div class="start-box" id="start-box-4"></div>
+					</div>
 					<div id="start-text">Start</div>					
 				</div>
 				<div id="time">TIME</div>
 				<div id="date">DATE</div>
 			</div>
+
+			
 		</div>
 		<!-- END MAIN CONTENT PAGE HTML stuff-->
 <script type="text/javascript" src="src/jquery-ui.min.js"></script>	
 <!-- Jquery Always First -->
 <script type="text/javascript" src="src/foundation.min.js"></script>
-<script type="text/javascript" src="src/calculator.js"></script>
-	
+<script type="text/javascript" src="src/calculator.js"></script>	
 <script type="text/javascript" src="src/fullscreenManager.js"></script>
 <script type="text/javascript" src="src/startMenuManager.js"></script>
 <script type="text/javascript" src="src/timer.js"></script>
 <script type="text/javascript" src="src/wallpaperManager.js"></script>
 <script type="text/javascript" src="src/test.js"></script>
+<script type="text/javascript" src="src/weather.js"></script>
 </body>
 </html>

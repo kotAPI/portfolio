@@ -1,3 +1,11 @@
+@font-face{
+	font-family: 'alone';
+	src:url(../fonts/morning.ttf);
+}
+@font-face{
+	font-family: 'weather';
+	src:url(../fonts/weather.otf);
+}
 #desktop{
 	position: absolute;
 	width: 100%;
@@ -14,7 +22,7 @@
 	position:absolute;
     bottom:-2px;
     right:0;
-	background:#E7DBC7;
+
 	box-shadow: 0px -2px 18px black;
 }
 #icon-container{
@@ -29,7 +37,7 @@
 	
 }
 .d-menu-item:hover{
-	background-color:#E7DDC8;
+	background-color:black;
 }
 .d-menu-icon{
 	height: 100%;
@@ -46,6 +54,7 @@
 	font-family: 'roboto-normal';
 	font-size: 16px;
 	vertical-align: text-top;
+	color:white;
 }
 #start-menu {
     position: absolute;
@@ -54,31 +63,32 @@
     left: 1px;
     height: 400px;
     width: 250px;
-    background-color: white;
+    background-color: rgba(0,0,0,0.5);
 }
 #start-button{
 	height: 100%;
 	width: 120px;
 	bottom:100px;
-	background: #E1BA91;
-	border-top-right-radius: 40px;
+
 }
-#start-button:hover{
-	background: #8A7259;
-}
-#start-button:hover{
-	cursor: pointer;
-}
+
 #start-logo{
-	margin-left:10px;
-	width: 40px;
-	height: 100%;
-	background:url(../image/startbutton.png);
-	background-size: 100% 100%;
+	position: relative;
+    top: 7px;
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+    transform-origin: center;
+    transform: rotate(45deg);
+
+    animation-name:spinThisShit;
+	animation-duration:4s;
+	animation-iteration-count:infinite;
+
 }
 #start-text{
-	top: -27px;
-    left: -21px;
+	top: -16px;
+    left: -32px;
     position: relative;
     width: 50px;
     height: 100%;
@@ -96,7 +106,7 @@
     bottom: 15px;
     right: 4px;
     font-size: 12px;
-    color: #747062;
+    color: #fff;
 }
 #date{
 	position: absolute;
@@ -106,9 +116,87 @@
     bottom: 0px;
     right: 6px;
     font-weight: 700;
-    color: #444340;
+    color: #fff;
     font-size: 11px;
 }
 .d-scrollable{
 	overflow: scroll;
+}
+
+.start-box{
+	margin: 1px;
+	width: 10px;
+	height: 10px;
+	background: white;
+	position: absolute;
+	transition:0.1s;
+	animation-name:ColorSwapper;
+	animation-duration:8s;
+	animation-iteration-count:infinite;
+	animation-timing-function: step-end;
+}
+#start-box-1{
+	background-color:#C64D2F;
+	
+}
+#start-box-2{
+	left:12px;
+	animation-delay:2s;
+}
+
+#start-box-4{
+	left:12px;
+	top:12px;
+	animation-delay:4s;
+}
+#start-box-3{
+	top:12px;
+	animation-delay:6s;
+}
+#weather-container{
+	position: absolute;
+    text-align: center;
+    bottom:0px;
+    left: 250px;
+    width: 400px;
+	height: 150px;
+    color: white;
+    z-index: 90;
+
+}
+#weather-container > #city{
+	
+	font-family: 'alone';
+	font-size: 3em;
+}
+#weather-container > #weather-icon{
+	font-family: 'weather';
+	font-size:4em;
+}
+#weather-container > #weather-temperature{
+	font-family: 'alone';
+	font-size: 2em;
+}
+@keyframes ColorSwapper{
+	0%{
+		background-color:#C64D2F;
+	}
+	25%{
+		background-color:white;
+	}
+	50%{
+		background-color:white;
+	}
+	100%{
+		background-color:#C64D2F;
+	}
+}
+
+@keyframes spinThisShit{
+	0%{
+		transform: rotate(45deg);
+	}
+	100%{
+		transform: rotate(765deg);
+	}
 }

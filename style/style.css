@@ -33,6 +33,9 @@ html,body{
 	height: 100%;
 	background: black;
 	z-index: 100;
+
+	
+
 }
 #center-placeholder{
 	margin: auto;
@@ -42,30 +45,40 @@ html,body{
 }
 #logo-container{
 	position: relative;
-    left: 80px;
+    left: 87px;
     top: 12px;
+    width: 200px;
+    height: 200px;
+    transform-origin: center;
+
+    animation-name:rotatory;
+	animation-duration:4s;
+    animation-iteration-count: infinite;
+   
 }
 .box{
-	margin:2px;
 	width: 80px;
-    height: 80px;    
-    border-radius: 50%/120%;
+    height: 80px;
+    left: 20px;
+    position: relative;
+    margin: 2px;
+    top:10px;
 }
 #box-1{
 	border-top-right-radius: 0px;
-	background-color: #C7440D;	
+	background-color: #C64D2F;	
 }
 #box-2{
 	border-top-left-radius: 0px;	
-    background-color: #89D308;    
+    background-color: #DCAE80;    
 }
 #box-3{
 	border-bottom-right-radius: 0px;	
-    background-color: #8098F2;    
+    background-color: #DCAE80;    
 }
 #box-4{
 	border-bottom-left-radius: 0px;	
-    background-color: #E8B215;    
+    background-color: #DCAE80;    
 }
 #top-row{
 	    display: flex;
@@ -98,7 +111,7 @@ html,body{
 }
 #loading-bar{
 	width:300px;
-	height: 22px;
+	height: 36px;
 	border:2px solid white;
 	border-radius: 5px;
 	margin: auto;
@@ -184,5 +197,24 @@ html,body{
 	}
 	100%{
 		left:110%;
+	}
+}
+
+
+@keyframes rotatory{
+	0%{
+		transform:rotate(0deg);
+	}
+	25%{
+		transform:rotate(90deg);
+	}
+	50%{
+		transform:rotate(180deg);
+	}
+	75%{
+		transform:rotate(270deg);
+	}
+	100%{
+		transform:rotate(360deg);
 	}
 }
